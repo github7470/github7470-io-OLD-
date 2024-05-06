@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="567821873747100">
+            <conditions>
+                <condition id="2" name="Mouse button is down" sid="811383904328609" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="686885245805276" type="Sprite">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
