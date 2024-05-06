@@ -131,9 +131,29 @@
 			}
 		};
     </script>
-    <scripts src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></scripts>
     <script>
-	vkBridge.send("VKWebAppInit", {});
+      bridge.send('VKWebAppInit')
+  .then((data) => { 
+    if (data.result) {
+      // Приложение инициализировано
+    } else {
+      // Ошибка
+    }
+  })
+  .catch((error) => {
+    // Ошибка
+    console.log(error);
+  });
+    </script>
+    <script>
+      {
+        detail: {
+          type: "VKWebAppInitResult",
+            data: {
+            result: true
+          }
+        }
+      }
     </script>
 </body> 
 </html>
