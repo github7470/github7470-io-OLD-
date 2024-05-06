@@ -1,8 +1,7 @@
 <html>
   <body>
-    <iframe src="https://scratch.mit.edu/projects/1013634311/embed" allowtransparency="true" width="911" height="700" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    <script>
-      bridge.send('VKWebAppInit')
+    <iframe src="https://scratch.mit.edu/projects/1013634311/embed" allowtransparency="true" width="911" height="700" frameborder="1" scrolling="no" allowfullscreen></iframe>
+    <script> bridge.send('VKWebAppInit')
   .then((data) => { 
     if (data.result) {
       // Приложение инициализировано
@@ -13,7 +12,6 @@
   .catch((error) => {
     // Ошибка
     console.log(error);
-  });
-    </script>
+  }); </script>
   </body>
 </html>
