@@ -1,21 +1,21 @@
 <html>
   <head>
-    bridge.send('VKWebAppInit')
-  .then((data) => { 
-    if (data.result) {
-      // Приложение инициализировано
-    } else {
-      // Ошибка
-    }
-  })
-  .catch((error) => {
-    // Ошибка
-    console.log(error);
-  });
-   <script language="JavaScript"> document.write("Это включение JavaScript") </script>
+    <script language="JavaScript"> document.write("Это включение JavaScript") </script>
+     bridge.send('VKWebAppInit')
+   .then((data) => { 
+     if (data.result) {
+       // Приложение инициализировано
+     } else {
+       // Ошибка
+     }
+   })
+   .catch((error) => {
+     // Ошибка
+     console.log(error);
+   });
+   </script>
   </head>
   <body>
     <iframe src="https://scratch.mit.edu/projects/1013634311/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    <script language="JavaScript"> document.write("Это включение JavaScript") </script>
   </body>
 </html>
